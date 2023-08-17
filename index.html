@@ -39,149 +39,154 @@
         </div>
     </header>
     <main>
-        <section class="flex flex-col lg:flex-row max-w-screen-xl m-auto mt-10 ">
+        <section class="flex flex-col lg:flex-row max-w-screen-xl m-auto mt-10 main-parent">
+            <!-- design  -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-10 mt-10">
-                <!-- card 1 -->
-            <div class="card bg-base-100 shadow-xl">
-                <figure class="px-10 pt-10">
-                  <img src="./images/triangle.png" alt="Shoes" class="rounded-xl" />
-                </figure>
-                <div class="card-body items-center text-center">
-                  <h2 class="card-title">Triangle</h2>
-                  <p>Area (A) = 0.5 x b x h</p>
-                  <div class="flex gap-3">
-                    <div class="flex gap-1">
-                        <input class="bg-slate-300 w-24 p-1 rounded" type="text" placeholder="b">
-                        <p class="">cm</p>
+                <!-- triangle  -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                    <img src="./images/triangle.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                    <h2 class="card-title">Triangle</h2>
+                    <p>Area (A) = 0.5 x b x h</p>
+                    <div class="flex gap-3">
+                        <div class="flex gap-1">
+                            <input class="bg-slate-300 w-24 p-1 rounded" type="number" placeholder="b" id="triangle-b">
+                            <p class="">cm</p>
+                        </div>
+                        <div class="flex gap-1">
+                            <input class="bg-slate-300 w-24 p-1 rounded" type="number" placeholder="h" id="triangle-h">
+                            <p>cm</p>
+                        </div>
                     </div>
-                    <div class="flex gap-1">
-                        <input class="bg-slate-300 w-24 p-1 rounded" type="text" placeholder="h">
-                        <p>cm</p>
+                    <div class="card-actions mt-3">
+                        <button onclick="triangleArea()"  id="triangle-btn" class="btn btn-info px-16">Calculate</button>
                     </div>
-                  </div>
-                  <div class="card-actions mt-3">
-                    <button class="btn btn-info px-16">Calculate</button>
-                  </div>
+                    </div>
+                </div>
+                <!-- rectangle -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                    <img src="./images//rectangle.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                    <h2 class="card-title">Rectangle</h2>
+                    <p>Area (A) = w x I</p>
+                    <div class="flex gap-3">
+                        <div class="flex gap-1">
+                            <input class="bg-slate-300 w-24 p-1 rounded" type="number" placeholder="w" id="rectangle-w">
+                            <p class="">cm</p>
+                        </div>
+                        <div class="flex gap-1">
+                            <input class="bg-slate-300 w-24 p-1 rounded" type="number" placeholder="I" id="rectangle-i">
+                            <p>cm</p>
+                        </div>
+                    </div>
+                    <div class="card-actions mt-3">
+                        <button onclick="rectangleArea()" class="btn btn-info px-16">Calculate</button>
+                    </div>
+                    </div>
+                </div>
+                <!-- parallelogram -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                    <img src="./images//parallelogram.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                    <h2 class="card-title">Parallelogram</h2>
+                    <p>Area (A) = b x h</p>
+                    <div class="flex gap-3">
+                        <div class="flex gap-1">
+                            <input class="bg-slate-300 w-24 p-1 rounded" type="number" placeholder="b" id="parallelogram-b">
+                            <p class="">cm</p>
+                        </div>
+                        <div class="flex gap-1">
+                            <input class="bg-slate-300 w-24 p-1 rounded" type="number" placeholder="h" id="parallelogram-h">
+                            <p>cm</p>
+                        </div>
+                    </div>
+                    <div class="card-actions mt-3">
+                        <button onclick="parallelogramArea()" class="btn btn-info px-16">Calculate</button>
+                    </div>
+                    </div>
+                </div>
+                <!-- rhombus -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                    <img src="./images//rhombus.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                    <h2 class="card-title">Rhombus</h2>
+                    <p>Area (A) = 0.5 x d<sub>1</sub> x d <sub>2</sub></p>
+                    <div class="flex gap-3">
+                        <div class="flex gap-1">
+                            <input class="bg-slate-300 w-24 p-1 rounded" type="number" placeholder="d1" id="rhombus-d1">
+                            <p class="">cm</p>
+                        </div>
+                        <div class="flex gap-1">
+                            <input class="bg-slate-300 w-24 p-1 rounded" type="number" placeholder="d2" id="rhombus-d2">
+                            <p>cm</p>
+                        </div>
+                    </div>
+                    <div class="card-actions mt-3">
+                        <button onclick="rhombusArea()" class="btn btn-info px-16">Calculate</button>
+                    </div>
+                    </div>
+                </div>
+                <!-- pentagon -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                    <img src="./images//pentagon.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                    <h2 class="card-title">Pentagon</h2>
+                    <p>Area (A) = 0.5 x p x b</p>
+                    <div class="flex gap-3">
+                        <div class="flex gap-1">
+                            <input class="bg-slate-300 w-24 p-1 rounded" type="number" placeholder="p" id="pentagon-p">
+                            <p class="">cm</p>
+                        </div>
+                        <div class="flex gap-1">
+                            <input class="bg-slate-300 w-24 p-1 rounded" type="number" placeholder="b" id="pentagon-b">
+                            <p>cm</p>
+                        </div>
+                    </div>
+                    <div class="card-actions mt-3">
+                        <button onclick="pentagonArea()" class="btn btn-info px-16">Calculate</button>
+                    </div>
+                    </div>
+                </div>
+                <!-- ellipse -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                    <img src="./images//ellipse.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                    <h2 class="card-title">Ellipse</h2>
+                    <p>Area (A) = &pi;ab</p>
+                    <div class="flex gap-3">
+                        <div class="flex gap-1">
+                            <input class="bg-slate-300 w-24 p-1 rounded" type="number" placeholder="a" id="ellipse-a">
+                            <p class="">cm</p>
+                        </div>
+                        <div class="flex gap-1">
+                            <input class="bg-slate-300 w-24 p-1 rounded" type="number" placeholder="b" id="ellipse-b">
+                            <p>cm</p>
+                        </div>
+                    </div>
+                    <div class="card-actions mt-3">
+                        <button onclick="ellipseArea()" class="btn btn-info px-16">Calculate</button>
+                    </div>
+                    </div>
                 </div>
             </div>
-            <!-- card 2 -->
-            <div class="card bg-base-100 shadow-xl">
-                <figure class="px-10 pt-10">
-                  <img src="./images//rectangle.png" alt="Shoes" class="rounded-xl" />
-                </figure>
-                <div class="card-body items-center text-center">
-                  <h2 class="card-title">Rectangle</h2>
-                  <p>Area (A) = w x I</p>
-                  <div class="flex gap-3">
-                    <div class="flex gap-1">
-                        <input class="bg-slate-300 w-24 p-1 rounded" type="text" placeholder="w">
-                        <p class="">cm</p>
-                    </div>
-                    <div class="flex gap-1">
-                        <input class="bg-slate-300 w-24 p-1 rounded" type="text" placeholder="I">
-                        <p>cm</p>
-                    </div>
-                  </div>
-                  <div class="card-actions mt-3">
-                    <button class="btn btn-info px-16">Calculate</button>
-                  </div>
-                </div>
-            </div>
-            <!-- card 3 -->
-            <div class="card bg-base-100 shadow-xl">
-                <figure class="px-10 pt-10">
-                  <img src="./images//parallelogram.png" alt="Shoes" class="rounded-xl" />
-                </figure>
-                <div class="card-body items-center text-center">
-                  <h2 class="card-title">Parallelogram</h2>
-                  <p>Area (A) = 0.5 x b x h</p>
-                  <div class="flex gap-3">
-                    <div class="flex gap-1">
-                        <input class="bg-slate-300 w-24 p-1 rounded" type="text" placeholder="b">
-                        <p class="">cm</p>
-                    </div>
-                    <div class="flex gap-1">
-                        <input class="bg-slate-300 w-24 p-1 rounded" type="text" placeholder="h">
-                        <p>cm</p>
-                    </div>
-                  </div>
-                  <div class="card-actions mt-3">
-                    <button class="btn btn-info px-16">Calculate</button>
-                  </div>
-                </div>
-            </div>
-            <!-- card 4 -->
-            <div class="card bg-base-100 shadow-xl">
-                <figure class="px-10 pt-10">
-                  <img src="./images//rhombus.png" alt="Shoes" class="rounded-xl" />
-                </figure>
-                <div class="card-body items-center text-center">
-                  <h2 class="card-title">Rhombus</h2>
-                  <p>Area (A) = 0.5 x b x h</p>
-                  <div class="flex gap-3">
-                    <div class="flex gap-1">
-                        <input class="bg-slate-300 w-24 p-1 rounded" type="text" placeholder="b">
-                        <p class="">cm</p>
-                    </div>
-                    <div class="flex gap-1">
-                        <input class="bg-slate-300 w-24 p-1 rounded" type="text" placeholder="h">
-                        <p>cm</p>
-                    </div>
-                  </div>
-                  <div class="card-actions mt-3">
-                    <button class="btn btn-info px-16">Calculate</button>
-                  </div>
-                </div>
-            </div>
-            <!-- card 5 -->
-            <div class="card bg-base-100 shadow-xl">
-                <figure class="px-10 pt-10">
-                  <img src="./images//pentagon.png" alt="Shoes" class="rounded-xl" />
-                </figure>
-                <div class="card-body items-center text-center">
-                  <h2 class="card-title">Pentagon</h2>
-                  <p>Area (A) = 0.5 x b x h</p>
-                  <div class="flex gap-3">
-                    <div class="flex gap-1">
-                        <input class="bg-slate-300 w-24 p-1 rounded" type="text" placeholder="b">
-                        <p class="">cm</p>
-                    </div>
-                    <div class="flex gap-1">
-                        <input class="bg-slate-300 w-24 p-1 rounded" type="text" placeholder="h">
-                        <p>cm</p>
-                    </div>
-                  </div>
-                  <div class="card-actions mt-3">
-                    <button class="btn btn-info px-16">Calculate</button>
-                  </div>
-                </div>
-            </div>
-            <!-- card 6 -->
-            <div class="card bg-base-100 shadow-xl">
-                <figure class="px-10 pt-10">
-                  <img src="./images//ellipse.png" alt="Shoes" class="rounded-xl" />
-                </figure>
-                <div class="card-body items-center text-center">
-                  <h2 class="card-title">Ellipse</h2>
-                  <p>Area (A) = 0.5 x b x h</p>
-                  <div class="flex gap-3">
-                    <div class="flex gap-1">
-                        <input class="bg-slate-300 w-24 p-1 rounded" type="text" placeholder="b">
-                        <p class="">cm</p>
-                    </div>
-                    <div class="flex gap-1">
-                        <input class="bg-slate-300 w-24 p-1 rounded" type="text" placeholder="h">
-                        <p>cm</p>
-                    </div>
-                  </div>
-                  <div class="card-actions mt-3">
-                    <button class="btn btn-info px-16">Calculate</button>
-                  </div>
-                </div>
-            </div>
-            </div>
+            <!-- area calculation  -->
             <div class="lg:w-[470px]">
-                <h4 class="text-center font-semibold text-xl border">Area text calculation</h4>
+                <h4 class="text-center font-semibold text-xl border">Area Calculation</h4>
+                <div id="calculation-entry">
+
+                </div>
             </div>
         </section>
     </main>
