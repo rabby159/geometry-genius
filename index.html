@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius</title>
+
+    <!-- favicon link  -->
+    <link rel="shortcut icon" href="./images/circle-dot-regular.svg" type="image/x-icon">
+
+    <!-- tailwind and daisyUi -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google font poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!--  css style -->
+    <style>
+        .font-weight{
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar bg-cyan-200 max-w-screen-xl m-auto mt-5 rounded-md">
+            <div class="navbar-start ml-3">
+              <div>
+                <a class="normal-case text-4xl font-semibold">Interactive</a>
+                <p class="normal-case text-center text-2xl">Geometry Genius</p>
+              </div>
+            </div>
+            <div class="navbar-end mr-3">
+              <a class="btn btn-info">Blog</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="flex flex-col lg:flex-row max-w-screen-xl m-auto mt-10 ">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-10 mt-10">
+                <!-- card 1 -->
+            <div class="card bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="./images/triangle.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Triangle</h2>
+                  <p>Area (A) = 0.5 x b x h</p>
+                  <div class="flex gap-3">
+                    <div class="flex gap-1">
+                        <input class="bg-slate-300 w-24 p-1 rounded" type="text" placeholder="b">
+                        <p class="">cm</p>
+                    </div>
+                    <div class="flex gap-1">
+                        <input class="bg-slate-300 w-24 p-1 rounded" type="text" placeholder="h">
+                        <p>cm</p>
+                    </div>
+                  </div>
+                  <div class="card-actions mt-3">
+                    <button class="btn btn-info px-16">Calculate</button>
+                  </div>
+                </div>
+            </div>
+            <!-- card 2 -->
+            <div class="card bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="./images//rectangle.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Rectangle</h2>
+                  <p>Area (A) = w x I</p>
+                  <div class="flex gap-3">
+                    <div class="flex gap-1">
+                        <input class="bg-slate-300 w-24 p-1 rounded" type="text" placeholder="w">
+                        <p class="">cm</p>
+                    </div>
+                    <div class="flex gap-1">
+                        <input class="bg-slate-300 w-24 p-1 rounded" type="text" placeholder="I">
+                        <p>cm</p>
+                    </div>
+                  </div>
+                  <div class="card-actions mt-3">
+                    <button class="btn btn-info px-16">Calculate</button>
+                  </div>
+                </div>
+            </div>
+            <!-- card 3 -->
+            <div class="card bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="./images//parallelogram.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Parallelogram</h2>
+                  <p>Area (A) = 0.5 x b x h</p>
+                  <div class="flex gap-3">
+                    <div class="flex gap-1">
+                        <input class="bg-slate-300 w-24 p-1 rounded" type="text" placeholder="b">
+                        <p class="">cm</p>
+                    </div>
+                    <div class="flex gap-1">
+                        <input class="bg-slate-300 w-24 p-1 rounded" type="text" placeholder="h">
+                        <p>cm</p>
+                    </div>
+                  </div>
+                  <div class="card-actions mt-3">
+                    <button class="btn btn-info px-16">Calculate</button>
+                  </div>
+                </div>
+            </div>
+            <!-- card 4 -->
+            <div class="card bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="./images//rhombus.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Rhombus</h2>
+                  <p>Area (A) = 0.5 x b x h</p>
+                  <div class="flex gap-3">
+                    <div class="flex gap-1">
+                        <input class="bg-slate-300 w-24 p-1 rounded" type="text" placeholder="b">
+                        <p class="">cm</p>
+                    </div>
+                    <div class="flex gap-1">
+                        <input class="bg-slate-300 w-24 p-1 rounded" type="text" placeholder="h">
+                        <p>cm</p>
+                    </div>
+                  </div>
+                  <div class="card-actions mt-3">
+                    <button class="btn btn-info px-16">Calculate</button>
+                  </div>
+                </div>
+            </div>
+            <!-- card 5 -->
+            <div class="card bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="./images//pentagon.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Pentagon</h2>
+                  <p>Area (A) = 0.5 x b x h</p>
+                  <div class="flex gap-3">
+                    <div class="flex gap-1">
+                        <input class="bg-slate-300 w-24 p-1 rounded" type="text" placeholder="b">
+                        <p class="">cm</p>
+                    </div>
+                    <div class="flex gap-1">
+                        <input class="bg-slate-300 w-24 p-1 rounded" type="text" placeholder="h">
+                        <p>cm</p>
+                    </div>
+                  </div>
+                  <div class="card-actions mt-3">
+                    <button class="btn btn-info px-16">Calculate</button>
+                  </div>
+                </div>
+            </div>
+            <!-- card 6 -->
+            <div class="card bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="./images//ellipse.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Ellipse</h2>
+                  <p>Area (A) = 0.5 x b x h</p>
+                  <div class="flex gap-3">
+                    <div class="flex gap-1">
+                        <input class="bg-slate-300 w-24 p-1 rounded" type="text" placeholder="b">
+                        <p class="">cm</p>
+                    </div>
+                    <div class="flex gap-1">
+                        <input class="bg-slate-300 w-24 p-1 rounded" type="text" placeholder="h">
+                        <p>cm</p>
+                    </div>
+                  </div>
+                  <div class="card-actions mt-3">
+                    <button class="btn btn-info px-16">Calculate</button>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <div class="lg:w-[470px]">
+                <h4 class="text-center font-semibold text-xl border">Area text calculation</h4>
+            </div>
+        </section>
+    </main>
+    <script src="./calculating.js"></script>
+</body>
+</html>
